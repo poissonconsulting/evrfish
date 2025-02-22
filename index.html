@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>R Tools for Teck Fish Projects • teckfish</title>
+<title>R Tools for EVR Fish Projects • evrfish</title>
 <script src="katex-auto.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/Roboto_Condensed-0.4.9/font.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><link href="deps/KaTex-0.16.10/katex.min.css" rel="stylesheet">
-<script src="deps/KaTex-0.16.10/katex.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="R Tools for Teck Fish Projects">
+<script src="deps/KaTex-0.16.10/katex.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="R Tools for EVR Fish Projects">
 <meta name="description" content="Provides functions linearly interpolate missing values and calculate growing season degree days and growing degree days from daily water temperature data. It also exports fish codes for British Columbia and Alberta from the `fishbc` package.">
 <meta property="og:description" content="Provides functions linearly interpolate missing values and calculate growing season degree days and growing degree days from daily water temperature data. It also exports fish codes for British Columbia and Alberta from the `fishbc` package.">
 </head>
@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="index.html">teckfish</a>
+    <a class="navbar-brand me-2" href="index.html">evrfish</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0.9000</small>
 
@@ -48,7 +48,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/poissonconsulting/teckfish/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/poissonconsulting/evrfish/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -58,12 +58,12 @@
 <div class="row">
   <main id="main" class="col-md-9">
 <div class="section level1">
-<div class="page-header"><h1 id="teckfish">teckfish<a class="anchor" aria-label="anchor" href="#teckfish"></a>
+<div class="page-header"><h1 id="evrfish">evrfish<a class="anchor" aria-label="anchor" href="#evrfish"></a>
 </h1></div>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
-<p><code>teckfish</code> is an R package for Teck Fish Projects. It is intended to be used by Teck staff and contractors and anyone else who finds it useful.</p>
+<p><code>evrfish</code> is an R package for EVR Fish Projects. It is intended to be used by EVR staff and contractors and anyone else who finds it useful.</p>
 <p>The intention is to eventually migrate it to the <a href="https://github.com/TeckResourcesTDS" class="external-link">Teck Resources RDS GitHub organization</a>.</p>
 </div>
 <div class="section level2">
@@ -71,7 +71,7 @@
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"poissonconsulting/teckfish"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"poissonconsulting/evrfish"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="demonstration">Demonstration<a class="anchor" aria-label="anchor" href="#demonstration"></a>
@@ -81,7 +81,7 @@
 </h3>
 <p><code><a href="reference/gsdd.html">gsdd()</a></code> takes data frame with a <code>date</code> and <code>temperature</code> column with the mean daily water temperature in centigrade and calculates the growing season degree days (GSDD).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://poissonconsulting.github.io/teckfish/">teckfish</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://poissonconsulting.github.io/evrfish/">evrfish</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/gsdd.html">gsdd</a></span><span class="op">(</span><span class="fu">gsdd</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/gsdd/reference/temperature_data.html" class="external-link">temperature_data</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 1 × 2</span></span>
 <span><span class="co">#&gt;    year  gsdd</span></span>
@@ -124,21 +124,21 @@
 <div class="section level2">
 <h2 id="contribution">Contribution<a class="anchor" aria-label="anchor" href="#contribution"></a>
 </h2>
-<p>Please report any <a href="https://github.com/poissonconsulting/teckfish/issues" class="external-link">issues</a>.</p>
-<p><a href="https://github.com/poissonconsulting/teckfish/pulls" class="external-link">Pull requests</a> are always welcome.</p>
+<p>Please report any <a href="https://github.com/poissonconsulting/evrfish/issues" class="external-link">issues</a>.</p>
+<p><a href="https://github.com/poissonconsulting/evrfish/pulls" class="external-link">Pull requests</a> are always welcome.</p>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
 </h2>
-<p>Please note that the teckfish project is released with a <a href="https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the evrfish project is released with a <a href="https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
 
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/poissonconsulting/teckfish/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/poissonconsulting/teckfish/issues/" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/poissonconsulting/evrfish/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/poissonconsulting/evrfish/issues/" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -162,7 +162,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing teckfish</a></li>
+<li><a href="authors.html#citation">Citing evrfish</a></li>
 </ul>
 </div>
 
@@ -175,7 +175,7 @@
 <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0001-7388-1222" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
 <a href="https://www.poissonconsulting.ca/author/sarah-lyons/" class="external-link">Sarah Lyons</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-6745-6796" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Teck Resources <br><small class="roles"> Funder, copyright holder </small>  </li>
+<li>Elk Valley Resources <br><small class="roles"> Funder, copyright holder </small>  </li>
 <li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
@@ -184,9 +184,9 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://github.com/poissonconsulting/teckfish/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/poissonconsulting/teckfish/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://codecov.io/gh/poissonconsulting/teckfish?branch=main" class="external-link"><img src="https://codecov.io/gh/poissonconsulting/teckfish/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
-<li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></li>
+<li><a href="https://github.com/poissonconsulting/evrfish/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/poissonconsulting/evrfish/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://codecov.io/gh/poissonconsulting/evrfish?branch=main" class="external-link"><img src="https://codecov.io/gh/poissonconsulting/evrfish/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://opensource.org/license/mit/" class="external-link"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></li>
 </ul>
 </div>
 
@@ -195,7 +195,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>, <a href="https://www.poissonconsulting.ca/author/sarah-lyons/" class="external-link">Sarah Lyons</a>, Teck Resources.</p>
+  <p>Developed by <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>, <a href="https://www.poissonconsulting.ca/author/sarah-lyons/" class="external-link">Sarah Lyons</a>, Elk Valley Resources.</p>
 </div>
 
 <div class="pkgdown-footer-right">
