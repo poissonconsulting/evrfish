@@ -1,4 +1,4 @@
-Package: teckfish
+Package: evrfish
 Title: R Tools for Teck Fish Projects
 Version: 0.5.0.9000
 Authors@R: c(
@@ -21,9 +21,9 @@ Description: Provides functions linearly interpolate missing
     It also exports fish codes for British Columbia and
     Alberta from the `fishbc` package.
 License: MIT + file LICENSE
-URL: https://poissonconsulting.github.io/teckfish/,
-    https://github.com/poissonconsulting/teckfish
-BugReports: https://github.com/poissonconsulting/teckfish/issues/
+URL: https://poissonconsulting.github.io/evrfish/,
+    https://github.com/poissonconsulting/evrfish
+BugReports: https://github.com/poissonconsulting/evrfish/issues/
 Depends: 
     R (>= 4.1)
 Imports: 

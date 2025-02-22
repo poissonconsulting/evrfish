@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup, warning=FALSE, message=FALSE}
-library(teckfish)
+library(evrfish)
 library(dplyr)
 library(tibble)
 library(ggplot2)
@@ -158,9 +158,9 @@ classify_water_temp_data(
 ```{r, eval=FALSE}
 # install.packages("tidyverse")
 # install.packages("devtools")
-# devtools::install_github("poissonconsulting/teckfish")
+# devtools::install_github("poissonconsulting/evrfish")
 
-library(teckfish)
+library(evrfish)
 library(tidyverse)
 
 # read in logger file

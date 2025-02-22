@@ -1,39 +1,39 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
-# teckfish 0.5.0.9000
+# evrfish 0.5.0.9000
 
 - `gss()` now only ignores end truncation by default.
 
 - Switching to dplyr as duckplyr is undergoing some updates (#33).
 
 
-# teckfish 0.5.0
+# evrfish 0.5.0
 
 - Added `date_atus()` from `gsdd` package to calculate the date on which a specified number of accumulated thermal units are exceeded.
 - `gss_plot()` now has `min_length = 60` by default.
 
 
-# teckfish 0.4.0
+# evrfish 0.4.0
 
 - Added `gss_plot()` to plot temperature time series and season(s).
 
 
-# teckfish 0.3.0
+# evrfish 0.3.0
 
 - Added `gss()` function from `gsdd` package to calculate growing seasons.
 
 
-# teckfish 0.2.1
+# evrfish 0.2.1
 
 - Set lower default `min_length = 120` for `gsdd_cf()`.
 
-# teckfish 0.2.0
+# evrfish 0.2.0
 
 - Added `gsdd()` and `gdd()` to calculate Growing Season Degree Days and Growing Degree Days for a data frame for longest season (following decision by Ecofish and Lotic).
 - Soft-deprecated `gsdd_cf()` for `gsdd::gsdd_vctr()` which both calculate Growing Season Degree Days for a vector.
 - Removed `simulated_data`.
 
-# teckfish 0.1.0
+# evrfish 0.1.0
 
 ## Additions
 
@@ -50,7 +50,7 @@
 `"left"` and `"right"`.
 - Replaced `quiet = FALSE` argument with `msgs = TRUE`.
 
-# teckfish 0.0.1
+# evrfish 0.0.1
 
 - Added `gsdd_cf()` function which implements Growing Season Degree Days
 algorithm as described by Coleman and Fausch (2007)

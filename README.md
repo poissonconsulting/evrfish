@@ -5,18 +5,18 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/poissonconsulting/teckfish/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/teckfish/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/poissonconsulting/evrfish/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/evrfish/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/teckfish/branch/main/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/teckfish?branch=main)
+coverage](https://codecov.io/gh/poissonconsulting/evrfish/branch/main/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/evrfish?branch=main)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
-# teckfish
+# evrfish
 
 ## Introduction
 
-`teckfish` is an R package for Teck Fish Projects. It is intended to be
+`evrfish` is an R package for Teck Fish Projects. It is intended to be
 used by Teck staff and contractors and anyone else who finds it useful.
 
 The intention is to eventually migrate it to the [Teck Resources RDS
@@ -26,7 +26,7 @@ GitHub organization](https://github.com/TeckResourcesTDS).
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/teckfish")
+remotes::install_github("poissonconsulting/evrfish")
 ```
 
 ## Demonstration
@@ -38,7 +38,7 @@ the mean daily water temperature in centigrade and calculates the
 growing season degree days (GSDD).
 
 ``` r
-library(teckfish)
+library(evrfish)
 gsdd(gsdd::temperature_data)
 #> # A tibble: 1 × 2
 #>    year  gsdd
@@ -94,14 +94,14 @@ date_atus(gsdd::temperature_data, start_date = as.Date("1972-06-15"), atus = 600
 ## Contribution
 
 Please report any
-[issues](https://github.com/poissonconsulting/teckfish/issues).
+[issues](https://github.com/poissonconsulting/evrfish/issues).
 
-[Pull requests](https://github.com/poissonconsulting/teckfish/pulls) are
+[Pull requests](https://github.com/poissonconsulting/evrfish/pulls) are
 always welcome.
 
 ## Code of Conduct
 
-Please note that the teckfish project is released with a [Contributor
+Please note that the evrfish project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.

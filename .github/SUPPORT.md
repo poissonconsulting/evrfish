@@ -1,6 +1,6 @@
-# Getting help with teckfish
+# Getting help with evrfish
 
-Thanks for using teckfish!
+Thanks for using evrfish!
 Before filing an issue, there are a few places to explore and pieces to put together to make the process as smooth as possible.
 
 ## Make sure its new

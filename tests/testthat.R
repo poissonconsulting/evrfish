@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(teckfish)
+library(evrfish)
 
-test_check("teckfish")
+test_check("evrfish")

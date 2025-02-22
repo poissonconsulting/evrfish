@@ -1,6 +1,6 @@
-# Contributing to teckfish
+# Contributing to evrfish
 
-This outlines how to propose a change to teckfish. 
+This outlines how to propose a change to evrfish. 
 
 ## Fixing typos
 
@@ -41,6 +41,6 @@ Contributions with test cases included are easier to accept.
 
 ## Code of Conduct
 
-Please note that the teckfish project is released with a
+Please note that the evrfish project is released with a
 [Contributor Code of Conduct](/.github/CODE_OF_CONDUCT.md). 
 By contributing to this project you agree to abide by its terms.
