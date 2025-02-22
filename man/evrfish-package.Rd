@@ -4,7 +4,7 @@
 \name{evrfish-package}
 \alias{evrfish}
 \alias{evrfish-package}
-\title{evrfish: R Tools for Teck Fish Projects}
+\title{evrfish: R Tools for EVR Fish Projects}
 \description{
 Provides functions linearly interpolate missing values and calculate growing season degree days and growing degree days from daily water temperature data. It also exports fish codes for British Columbia and Alberta from the `fishbc` package.
 }
@@ -32,7 +32,7 @@ Other contributors:
   \item Jill Brooks [contributor]
   \item Andrew Harwood [contributor]
   \item Sebastian Dalgarno (\href{https://orcid.org/0000-0000-0000-0000}{ORCID}) [contributor]
-  \item Teck Resources [funder, copyright holder]
+  \item Elk Valley Resources [funder, copyright holder]
 }
 
 }

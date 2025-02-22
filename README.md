@@ -1,6 +1,5 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![Lifecycle:
@@ -9,15 +8,15 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/evrfish/branch/main/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/evrfish?branch=main)
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
 <!-- badges: end -->
 
 # evrfish
 
 ## Introduction
 
-`evrfish` is an R package for Teck Fish Projects. It is intended to be
-used by Teck staff and contractors and anyone else who finds it useful.
+`evrfish` is an R package for EVR Fish Projects. It is intended to be
+used by EVR staff and contractors and anyone else who finds it useful.
 
 The intention is to eventually migrate it to the [Teck Resources RDS
 GitHub organization](https://github.com/TeckResourcesTDS).

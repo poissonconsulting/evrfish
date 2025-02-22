@@ -24,8 +24,8 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-`evrfish` is an R package for Teck Fish Projects.
-It is intended to be used by Teck staff and contractors and anyone else
+`evrfish` is an R package for EVR Fish Projects.
+It is intended to be used by EVR staff and contractors and anyone else
 who finds it useful.
 
 The intention is to eventually migrate it to 
