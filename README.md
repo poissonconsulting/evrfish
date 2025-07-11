@@ -1,5 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
 [![Lifecycle:
@@ -17,9 +18,6 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 
 `evrfish` is an R package for EVR Fish Projects. It is intended to be
 used by EVR staff and contractors and anyone else who finds it useful.
-
-The intention is to eventually migrate it to the [Teck Resources RDS
-GitHub organization](https://github.com/TeckResourcesTDS).
 
 ## Installation
 

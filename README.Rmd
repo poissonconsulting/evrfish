@@ -28,9 +28,6 @@ knitr::opts_chunk$set(
 It is intended to be used by EVR staff and contractors and anyone else
 who finds it useful.
 
-The intention is to eventually migrate it to 
-the [Teck Resources RDS GitHub organization](https://github.com/TeckResourcesTDS). 
-
 ## Installation
 
 ```r
