@@ -19,7 +19,7 @@ gsdd <- function(
   gsdd::gsdd(
     x,
     min_length = min_length,
-    pick = "longest",
+    pick = "all",
     msgs = msgs
   )
 }

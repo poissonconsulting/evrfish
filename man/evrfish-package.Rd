@@ -31,7 +31,7 @@ Other contributors:
   \item Bronwen Lewis [contributor]
   \item Jill Brooks [contributor]
   \item Andrew Harwood [contributor]
-  \item Sebastian Dalgarno (\href{https://orcid.org/0000-0000-0000-0000}{ORCID}) [contributor]
+  \item Sebastian Dalgarno [contributor]
   \item Elk Valley Resources [funder, copyright holder]
 }
 
