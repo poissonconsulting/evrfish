@@ -16,10 +16,7 @@ of the mean daily water temperature vector
 or a string of "start", "end", "none" (equivalent to FALSE) or "both"
 (equivalent to TRUE) specifying which type of truncation to ignore.}
 
-\item{min_length}{A whole number of the minimum length to consider.
-Must be at least twice the window width but no more than 365.
-If NULL then set to be the difference between \code{start_date} and \code{end_date}
-(ignoring the year).}
+\item{min_length}{A whole number of the minimum number of values to consider.}
 
 \item{msgs}{A flag specifying whether to provide messages.}
 }

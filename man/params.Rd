@@ -28,6 +28,8 @@ erroneous range of temperature values.}
 \item{erroneous_rate}{A numeric value indicating the rate of change
 (temperature per hour) of temperature values that is considered erroneous.}
 
+\item{min_length}{A whole number of the minimum number of values to consider.}
+
 \item{questionable_buffer}{A numeric value indicating the buffer in hours for
 questionable values.}
 

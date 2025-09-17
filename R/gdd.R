@@ -3,6 +3,7 @@
 #' A wrapper on [gsdd::gdd()] to get the Growing Degree Days up to a date for
 #' the longest growing season.
 #'
+#' @inheritParams params
 #' @inheritParams gsdd::gdd
 #' @seealso [gsdd::gdd()], [gsdd()] and [gss()].
 #' @export

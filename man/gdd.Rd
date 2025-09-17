@@ -15,10 +15,7 @@ mean daily water temperature in degrees centigrade.}
 \item{end_date}{A Date scalar of the last date
 within each year to consider (the year is ignored).}
 
-\item{min_length}{A whole number of the minimum length to consider.
-Must be at least twice the window width but no more than 365.
-If NULL then set to be the difference between \code{start_date} and \code{end_date}
-(ignoring the year).}
+\item{min_length}{A whole number of the minimum number of values to consider.}
 
 \item{msgs}{A flag specifying whether to provide messages.}
 }

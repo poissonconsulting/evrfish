@@ -4,6 +4,7 @@
 #' plot all Growing Seasons ignoring truncation.
 #' For more information see [gsdd::gss_plot()].
 #'
+#' @inheritParams params
 #' @inheritParams gsdd::gss_plot
 #' @seealso [gsdd::gss_plot()] and [gss()].
 #' @export

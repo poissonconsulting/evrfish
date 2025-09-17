@@ -3,6 +3,7 @@
 #' A wrapper on [gsdd::gsdd()] to get the Growing Season Degree Days for
 #' the longest growing season.
 #'
+#' @inheritParams params
 #' @inheritParams gsdd::gsdd
 #' @seealso [gsdd::gsdd()], [gsdd()] and [gss()].
 #' @export
@@ -19,7 +20,6 @@ gsdd <- function(
   gsdd::gsdd(
     x,
     min_length = min_length,
-    pick = "all",
     msgs = msgs
   )
 }

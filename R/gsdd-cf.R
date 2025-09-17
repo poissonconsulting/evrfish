@@ -2,6 +2,7 @@
 #'
 #' Soft-deprecated for [gsdd::gsdd_vctr()].
 #'
+#' @inheritParams params
 #' @inheritParams gsdd::gsdd_vctr
 #' @return A non-negative real number of the GSDD.
 #' @seealso [gsdd_vctr()]

@@ -4,6 +4,7 @@
 #' get all Growing Seasons ignoring truncation.
 #' For more information see [gsdd::gss()].
 #'
+#' @inheritParams params
 #' @inheritParams gsdd::gss
 #' @seealso [gsdd::gss()], [gsdd()] and [gss()].
 #' @export
