@@ -19,11 +19,22 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 `evrfish` is an R package for EVR Fish Projects. It is intended to be
 used by EVR staff and contractors and anyone else who finds it useful.
 
+Additional information is available at
+<https://poissonconsulting.github.io/evrfish/>.
+
 ## Installation
+
+To install from [GitHub](https://github.com/poissonconsulting/evrfish)
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/evrfish")
+```
+
+or from [r-universe](https://poissonconsulting.r-universe.dev/evrfish).
+
+``` r
+install.packages("evrfish", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 ## Demonstration
@@ -43,7 +54,7 @@ gsdd(gsdd::temperature_data)
 #> 1  2019 3899.
 ```
 
-`gdd` calculate the growing degree days (GDD) to a date.
+`gdd()` calculate the growing degree days (GDD) to a date.
 
 ``` r
 gdd(gsdd::temperature_data, end_date = as.Date("1972-08-30"))
@@ -53,7 +64,7 @@ gdd(gsdd::temperature_data, end_date = as.Date("1972-08-30"))
 #> 1  2019 3102.
 ```
 
-`gss` calculates the growing season(s) (GSS).
+`gss()` calculates the growing season(s) (GSS).
 
 ``` r
 gss(gsdd::temperature_data)
@@ -64,7 +75,7 @@ gss(gsdd::temperature_data)
 #> 1  2019 1971-03-20  1971-11-07 3899. none
 ```
 
-`gss_plots` plots the temperature time series including growing
+`gss_plots()` plots the temperature time series including growing
 season(s), moving average and thresholds.
 
 ``` r
@@ -75,7 +86,7 @@ gss_plot(gsdd::temperature_data)
 
 ### ATUs
 
-`date_atus` calculates the date on which a specified number of
+`date_atus()` calculates the date on which a specified number of
 accumulated thermal units are exceeded.
 
 ``` r
