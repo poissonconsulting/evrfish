@@ -1,10 +1,9 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
-# evrfish 0.5.0.9000
+# evrfish 0.6.0
 
-- `gss()` now only ignores end truncation by default.
-
-- Switching to dplyr as duckplyr is undergoing some updates (#33).
+- Changed `gsdd()` from `"longest"` growing season to `"all"` growing seasons.
+- Changed `gss()` so ignores end truncation but not start truncation by default.
 
 
 # evrfish 0.5.0
