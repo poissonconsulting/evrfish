@@ -48,18 +48,17 @@ aggregate_water_temp_data <- function(data, ...,
     chk::chk_number(min_coverage)
     chk::chk_range(min_coverage)
   
-  lookup <- ".value" |>
+    lookup <- ".value" |>
     rlang::set_names(value)
-  
-  data <- data |>
+
+    n <- ceiling(min_diff_days(data[[date_time]])^-1 * min_coverage)
+    print(n)
+  data |>
     dplyr::rename(.date_time = dplyr::all_of(date_time), 
                      .value = dplyr::all_of(value)) |>
-    dplyr::arrange(.data$.date_time) |>
     dplyr::mutate(date = dttr2::dtt_date(.data$.date_time)) |>
     dplyr::group_by(date) |>
-    dplyr::summarise(.value = mean(.data$.value)) |>
-    dplyr::bind_rows() |>
+    dplyr::summarise(.value = mean_daily(.data$.value, n = n), .groups = "drop") |>
     dplyr::rename(dplyr::all_of(lookup)) |>
     dplyr::as_tibble()
-  data
 }

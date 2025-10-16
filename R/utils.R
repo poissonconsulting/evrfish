@@ -25,3 +25,19 @@ index_begin_run <- function(x) {
   }
   index[c(TRUE, diff(index) > 1)]
 }
+
+min_diff_days <- function(x) {
+  x |>
+    sort() |>
+    diff(units = "days") |>
+    as.numeric() |>
+    min()
+}
+
+mean_daily <- function(x, n) {
+  x <- x[!is.na(x)]
+  if(length(x) < n) {
+    return(NA_real_)
+  }
+  mean(x)
+}
