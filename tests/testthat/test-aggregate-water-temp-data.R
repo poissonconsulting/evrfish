@@ -82,7 +82,7 @@ test_that("aggregate_water_temp_data 15 min default TZ", {
   data <- data.frame(
     date_time =
       seq(as.POSIXct("2021-05-07 00:00:00", tz = "UTC"), as.POSIXct("2021-05-09 23:45:00", tz = "UTC"), length.out = 288),
-    values = seq(-10,10, length.out = 288)
+    values = seq(-9,10, length.out = 288)
   )
   agg <- aggregate_water_temp_data(data, value = "values")
   expect_snapshot_data(agg, "3day15min")
@@ -92,7 +92,7 @@ test_that("aggregate_water_temp_data 15 min UTC", {
   data <- data.frame(
     date_time =
       seq(as.POSIXct("2021-05-07 00:00:00", tz = "UTC"), as.POSIXct("2021-05-09 23:45:00", tz = "UTC"), length.out = 288),
-    values = seq(-10,10, length.out = 288)
+    values = seq(-9,10, length.out = 288)
   )
   agg <- aggregate_water_temp_data(data, value = "values")
   expect_snapshot_data(agg, "3day15minutc")
