@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# evrfish 0.7.0
+
+- Added `aggregate_water_temp_data()` function.
+
+
 # evrfish 0.6.0
 
 - Changed `gsdd()` from `"longest"` growing season to `"all"` growing seasons.
