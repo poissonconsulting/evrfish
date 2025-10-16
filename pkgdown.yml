@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   classify-water-temp: classify-water-temp.html
-last_built: 2025-10-16T03:29Z
+last_built: 2025-10-16T03:41Z
 urls:
   reference: https://poissonconsulting.github.io/evrfish/reference
   article: https://poissonconsulting.github.io/evrfish/articles
