@@ -10,6 +10,7 @@
 ## usethis namespace: end
 NULL
 
+utils::globalVariables("where")
 utils::globalVariables("closest")
 utils::globalVariables("x")
 utils::globalVariables("y")

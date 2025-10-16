@@ -21,6 +21,7 @@
 #' @param erroneous_rate A numeric value indicating the rate of change
 #'   (temperature per hour) of temperature values that is considered erroneous.
 #' @param min_length A whole number of the minimum number of values to consider.
+#' @param min_coverage A numeric value of the minimum coverage as a proportion.
 #' @param questionable_buffer A numeric value indicating the buffer in hours for
 #'   questionable values.
 #' @param questionable_min A numeric value indicating the lower bound of the

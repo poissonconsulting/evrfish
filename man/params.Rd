@@ -30,6 +30,8 @@ erroneous range of temperature values.}
 
 \item{min_length}{A whole number of the minimum number of values to consider.}
 
+\item{min_coverage}{A numeric value of the minimum coverage as a proportion.}
+
 \item{questionable_buffer}{A numeric value indicating the buffer in hours for
 questionable values.}
 
