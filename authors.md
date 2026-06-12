@@ -21,6 +21,7 @@
 - **Andrew Harwood**. Contributor.
 
 - **Sebastian Dalgarno**. Contributor.
+  [](https://orcid.org/0000-0002-3658-4517)
 
 - **Elk Valley Resources**. Funder, copyright holder.
 
