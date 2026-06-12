@@ -11,7 +11,8 @@ Authors@R: c(
     person("Bronwen", "Lewis", role = "ctb"),
     person("Jill", "Brooks", role = "ctb"),
     person("Andrew", "Harwood", role = "ctb"),
-    person("Sebastian", "Dalgarno", role = "ctb"),
+    person("Sebastian", "Dalgarno", role = "ctb",
+           comment = c(ORCID = "0000-0002-3658-4517")),
     person("Elk Valley Resources", role = c("fnd", "cph"))
   )
 Description: Provides functions linearly interpolate missing
