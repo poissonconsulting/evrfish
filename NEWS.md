@@ -1,3 +1,13 @@
+<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+
+# evrfish 0.7.0.9000
+
+* Add fledge-bump workflow
+* Add fledge-tag-on-merge workflow
+- Added `aggregate_water_temp_data()` function.
+- Changed gssd::gsdd() pick argument from longest to all.
+
+
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
 # evrfish 0.7.0
