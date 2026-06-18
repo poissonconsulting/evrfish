@@ -1,5 +1,14 @@
 # Changelog
 
+## evrfish 0.7.0.9000
+
+- Add fledge-bump workflow
+- Add fledge-tag-on-merge workflow
+- Added
+  [`aggregate_water_temp_data()`](https://poissonconsulting.github.io/evrfish/reference/aggregate_water_temp_data.md)
+  function.
+- Changed gssd::gsdd() pick argument from longest to all.
+
 ## evrfish 0.7.0
 
 - Added
