@@ -31,13 +31,13 @@ Source:
 [`DESCRIPTION`](https://github.com/poissonconsulting/evrfish/blob/main/DESCRIPTION)
 
 Thorley J, Pearson A, Lyons S (2026). *evrfish: R Tools for EVR Fish
-Projects*. R package version 0.7.0.9000,
+Projects*. R package version 0.7.0.9001,
 <https://poissonconsulting.github.io/evrfish/>.
 
     @Manual{,
       title = {evrfish: R Tools for EVR Fish Projects},
       author = {Joe Thorley and Ayla Pearson and Sarah Lyons},
       year = {2026},
-      note = {R package version 0.7.0.9000},
+      note = {R package version 0.7.0.9001},
       url = {https://poissonconsulting.github.io/evrfish/},
     }
