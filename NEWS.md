@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# evrfish 0.7.0.9001
+
+- Same as previous version.
+
+
 # evrfish 0.7.0.9000
 
 * Add fledge-bump workflow
