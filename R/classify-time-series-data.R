@@ -29,7 +29,7 @@
 #'
 #'   5. In addition, ignoring the buffer, reasonable values
 #'   between two questionable/erroneous values are coded as
-#'   questionable if the hourly duration of the gap is within the 
+#'   questionable if the hourly duration of the gap is within the
 #'   (gap_range).
 #'
 #' @examples
@@ -44,19 +44,21 @@
 #' )
 #'
 #' classify_time_series_data(data, value = "water_temperature")
-classify_time_series_data <- function(data,
-                                      ...,
-                                      date_time = "date_time",
-                                      value = "value",
-                                      questionable_min = 0,
-                                      questionable_max = 30,
-                                      erroneous_min = -0.5,
-                                      erroneous_max = 40,
-                                      questionable_rate = 2,
-                                      erroneous_rate = 5,
-                                      questionable_buffer = 1,
-                                      erroneous_buffer = 1,
-                                      gap_range = 5) {
+classify_time_series_data <- function(
+  data,
+  ...,
+  date_time = "date_time",
+  value = "value",
+  questionable_min = 0,
+  questionable_max = 30,
+  erroneous_min = -0.5,
+  erroneous_max = 40,
+  questionable_rate = 2,
+  erroneous_rate = 5,
+  questionable_buffer = 1,
+  erroneous_buffer = 1,
+  gap_range = 5
+) {
   check_time_series_args(
     data,
     ...,
@@ -74,8 +76,10 @@ classify_time_series_data <- function(data,
   )
 
   data <- data |>
-    dplyr::rename(.date_time = dplyr::all_of(date_time), 
-                     .value = dplyr::all_of(value)) |>
+    dplyr::rename(
+      .date_time = dplyr::all_of(date_time),
+      .value = dplyr::all_of(value)
+    ) |>
     dplyr::arrange(.data$.date_time) |>
     dplyr::mutate(status_id = rep(NA_integer_, nrow(data))) |>
     set_status_id()
@@ -139,23 +143,60 @@ classify_time_series_data <- function(data,
   gap <- data |>
     dplyr::filter(.data$status_id != 1L) |>
     dplyr::mutate(
-      .status_id = pmax(.data$status_id, dplyr::lead(.data$status_id), na.rm = TRUE),
+      .status_id = pmax(
+        .data$status_id,
+        dplyr::lead(.data$status_id),
+        na.rm = TRUE
+      ),
       .status_id = 2L, # TODO 2L, pmin or pmax?? - pmax
       .start_date_time = .data$.date_time,
       .end_date_time = dplyr::lead(.data$.date_time),
       .keep = "none"
     ) |>
-    dplyr::filter(.data$.end_date_time - .data$.start_date_time <= gap_range * 3600)
+    dplyr::filter(
+      .data$.end_date_time - .data$.start_date_time <= gap_range * 3600
+    )
 
   data <- data |>
-    dplyr::left_join(questionable_range, by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))) |>
-    dplyr::mutate(status_id = dplyr::if_else(.data$status_id == 1L & .data$.date_time <= .data$.end_date_time, 2L, .data$status_id, .data$status_id)) |>
+    dplyr::left_join(
+      questionable_range,
+      by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))
+    ) |>
+    dplyr::mutate(
+      status_id = dplyr::if_else(
+        .data$status_id == 1L & .data$.date_time <= .data$.end_date_time,
+        2L,
+        .data$status_id,
+        .data$status_id
+      )
+    ) |>
     dplyr::select(!c(".start_date_time", ".end_date_time")) |>
-    dplyr::left_join(erroneous_range, by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))) |>
-    dplyr::mutate(status_id = dplyr::if_else(.data$status_id != 3L & .data$.date_time <= .data$.end_date_time, 3L, .data$status_id, .data$status_id)) |>
+    dplyr::left_join(
+      erroneous_range,
+      by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))
+    ) |>
+    dplyr::mutate(
+      status_id = dplyr::if_else(
+        .data$status_id != 3L & .data$.date_time <= .data$.end_date_time,
+        3L,
+        .data$status_id,
+        .data$status_id
+      )
+    ) |>
     dplyr::select(!c(".start_date_time", ".end_date_time")) |>
-    dplyr::left_join(gap, by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))) |>
-    dplyr::mutate(status_id = dplyr::if_else(.data$status_id < .data$.status_id & .data$.date_time <= .data$.end_date_time, .data$.status_id, .data$status_id, .data$status_id)) |>
+    dplyr::left_join(
+      gap,
+      by = dplyr::join_by(closest(x$.date_time >= y$.start_date_time))
+    ) |>
+    dplyr::mutate(
+      status_id = dplyr::if_else(
+        .data$status_id < .data$.status_id &
+          .data$.date_time <= .data$.end_date_time,
+        .data$.status_id,
+        .data$status_id,
+        .data$status_id
+      )
+    ) |>
     dplyr::select(!c(".status_id", ".start_date_time", ".end_date_time")) |>
     set_status_id() |>
     dplyr::mutate(.date_time = as.POSIXct(.data$.date_time, tz = tz)) |>
@@ -165,19 +206,21 @@ classify_time_series_data <- function(data,
     dplyr::as_tibble()
 }
 
-check_time_series_args <- function(data,
-                                   ...,
-                                   date_time = "date_time",
-                                   value = "value",
-                                   questionable_min = 0,
-                                   questionable_max = 30,
-                                   erroneous_min = -0.5,
-                                   erroneous_max = 40,
-                                   questionable_rate = 2,
-                                   erroneous_rate = 5,
-                                   questionable_buffer = 1,
-                                   erroneous_buffer = 1,
-                                   gap_range = 5) {
+check_time_series_args <- function(
+  data,
+  ...,
+  date_time = "date_time",
+  value = "value",
+  questionable_min = 0,
+  questionable_max = 30,
+  erroneous_min = -0.5,
+  erroneous_max = 40,
+  questionable_rate = 2,
+  erroneous_rate = 5,
+  questionable_buffer = 1,
+  erroneous_buffer = 1,
+  gap_range = 5
+) {
   chk::chk_data(data)
   chk::chk_unused(...)
   chk::chk_string(date_time)
@@ -190,8 +233,11 @@ check_time_series_args <- function(data,
     rlang::set_names(c(date_time, value))
 
   chk::check_data(data, values = values)
-  
-  chk::chk_unique(as.integer(data[[date_time]]), x_name = paste0("`data$", date_time, "`"))
+
+  chk::chk_unique(
+    as.integer(data[[date_time]]),
+    x_name = paste0("`data$", date_time, "`")
+  )
 
   chk::chk_not_subset(colnames(data), reserved_colnames())
 
@@ -243,6 +289,9 @@ set_status_id <- function(data) {
 
 reserved_colnames <- function() {
   c(
-    ".rate", ".status_id", ".start_date_time", ".end_date_time"
+    ".rate",
+    ".status_id",
+    ".start_date_time",
+    ".end_date_time"
   )
 }

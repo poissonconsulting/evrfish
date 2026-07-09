@@ -10,9 +10,10 @@
 #' @examples
 #' date_atus(gsdd::temperature_data)
 date_atus <- function(
-    x,
-    atus = 600,
-    start_date = as.Date("1972-03-01")) {
+  x,
+  atus = 600,
+  start_date = as.Date("1972-03-01")
+) {
   gsdd::date_atus(
     x,
     atus = atus,
