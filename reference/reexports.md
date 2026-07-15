@@ -5,4 +5,4 @@ to see their documentation.
 
 - fishbc:
 
-  [`fbc_common_name`](https://rdrr.io/pkg/fishbc/man/fbc_common_name.html)
+  [`fbc_common_name`](https://poissonconsulting.github.io/fishbc/reference/fbc_common_name.html)
