@@ -18,7 +18,7 @@ mean daily water temperature in degrees centigrade.}
 }
 \description{
 A wrapper on \code{\link[gsdd:gsdd]{gsdd::gsdd()}} to get the Growing Season Degree Days for
-the longest growing season.
+all the growing seasons in a year.
 }
 \examples{
 gsdd(gsdd::temperature_data)

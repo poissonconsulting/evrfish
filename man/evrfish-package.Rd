@@ -22,6 +22,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
   \item Ayla Pearson \email{ayla@poissonconsulting.ca} (\href{https://orcid.org/0000-0001-7388-1222}{ORCID})
   \item Sarah Lyons (\href{https://orcid.org/0000-0002-6745-6796}{ORCID})
 }
@@ -31,7 +32,7 @@ Other contributors:
   \item Bronwen Lewis [contributor]
   \item Jill Brooks [contributor]
   \item Andrew Harwood [contributor]
-  \item Sebastian Dalgarno [contributor]
+  \item Sebastian Dalgarno (\href{https://orcid.org/0000-0002-3658-4517}{ORCID}) [contributor]
   \item Elk Valley Resources [funder, copyright holder]
 }
 

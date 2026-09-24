@@ -28,10 +28,10 @@ of the mean daily water temperature vector
 or a string of "start", "end", "none" (equivalent to FALSE) or "both"
 (equivalent to TRUE) specifying which type of truncation to ignore.}
 
-\item{pick}{A string specifying whether to pick the
-"longest", "shortest", "first" or "last" 'season' or the season with the
-"biggest" or "smallest" GSDD. By default the returned value is the
-the GSDD value for the "longest" 'season'.}
+\item{pick}{A string specifying which 'season' to pick when more than one
+is present. One of "longest", "shortest", "first" or "last", or the season
+with the "biggest" or "smallest" GSDD, or "all" to use every season.
+By default "all".}
 
 \item{latex}{A flag specifying whether to use LaTeX to include degree
 symbol in y-axis label.}

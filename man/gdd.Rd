@@ -21,7 +21,7 @@ within each year to consider (the year is ignored).}
 }
 \description{
 A wrapper on \code{\link[gsdd:gdd]{gsdd::gdd()}} to get the Growing Degree Days up to a date for
-the longest growing season.
+all growing seasons.
 }
 \examples{
 gdd(gsdd::temperature_data)

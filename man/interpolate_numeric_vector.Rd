@@ -24,7 +24,7 @@ A double or integer vector.
 Useful for filling in short runs of missing values in a time series.
 }
 \details{
-\code{interpolate_numeric_vector()} is essentially a wrapper on \code{\link[stats:approxfun]{stats::approx()}}.
+\code{interpolate_numeric_vector()} is essentially a wrapper on \code{\link[stats:approx]{stats::approx()}}.
 }
 \examples{
 interpolate_numeric_vector(c(1, NA, 4))

@@ -18,3 +18,13 @@
         <int> <dbl>
       1  2019   500
 
+---
+
+    Code
+      gdd_all
+    Output
+      # A tibble: 1 x 2
+         year   gdd
+        <int> <dbl>
+      1  2019  1300
+

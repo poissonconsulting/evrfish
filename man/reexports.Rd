@@ -11,6 +11,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{fishbc}{\code{\link[fishbc]{fbc_common_name}}}
+  \item{fishbc}{\code{\link[fishbc:fbc_common_name]{fbc_common_name()}}}
 }}
 
