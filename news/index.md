@@ -1,25 +1,14 @@
 # Changelog
 
-## evrfish 0.7.0.9003
+## evrfish 0.8.0
 
-- Same as previous version.
-
-## evrfish 0.7.0.9002
-
-- Same as previous version.
-
-## evrfish 0.7.0.9001
-
-- Same as previous version.
-
-## evrfish 0.7.0.9000
-
-- Add fledge-bump workflow
-- Add fledge-tag-on-merge workflow
-- Added
-  [`aggregate_water_temp_data()`](https://poissonconsulting.github.io/evrfish/reference/aggregate_water_temp_data.md)
-  function.
-- Changed gssd::gsdd() pick argument from longest to all.
+- Changed
+  [`gdd()`](https://poissonconsulting.github.io/evrfish/reference/gdd.md)
+  from the `"longest"` growing season to `"all"` growing seasons,
+  consistent with
+  [`gsdd()`](https://poissonconsulting.github.io/evrfish/reference/gsdd.md).
+- Formatted code with air
+  ([\#42](https://github.com/poissonconsulting/evrfish/issues/42)).
 
 ## evrfish 0.7.0
 
