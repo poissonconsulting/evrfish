@@ -11,9 +11,10 @@
 #' @examples
 #' gsdd(gsdd::temperature_data)
 gsdd <- function(
-    x,
-    min_length = 120,
-    msgs = TRUE) {
+  x,
+  min_length = 120,
+  msgs = TRUE
+) {
   chk_whole_number(min_length)
   chk_range(min_length, c(14, 274))
 

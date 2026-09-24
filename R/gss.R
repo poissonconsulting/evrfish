@@ -12,11 +12,12 @@
 #' @examples
 #' gss(gsdd::temperature_data)
 gss <- function(
-    x,
-    min_length = 120,
-    ignore_truncation = "end",
-    pick = "all",
-    msgs = TRUE) {
+  x,
+  min_length = 120,
+  ignore_truncation = "end",
+  pick = "all",
+  msgs = TRUE
+) {
   chk_whole_number(min_length)
   chk_range(min_length, c(14, 274))
 

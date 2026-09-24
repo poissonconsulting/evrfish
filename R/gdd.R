@@ -11,10 +11,11 @@
 #' @examples
 #' gdd(gsdd::temperature_data)
 gdd <- function(
-    x,
-    end_date = as.Date("1972-09-30"),
-    min_length = 60,
-    msgs = TRUE) {
+  x,
+  end_date = as.Date("1972-09-30"),
+  min_length = 60,
+  msgs = TRUE
+) {
   chk_whole_number(min_length)
   chk_range(min_length, c(14, 213))
 

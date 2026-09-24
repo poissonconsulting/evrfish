@@ -12,14 +12,15 @@
 #' @examples
 #' gss_plot(gsdd::temperature_data)
 gss_plot <- function(
-    x,
-    min_length = 60,
-    ignore_truncation = TRUE,
-    pick = "all",
-    latex = FALSE,
-    nrow = NULL,
-    ncol = NULL,
-    msgs = TRUE) {
+  x,
+  min_length = 60,
+  ignore_truncation = TRUE,
+  pick = "all",
+  latex = FALSE,
+  nrow = NULL,
+  ncol = NULL,
+  msgs = TRUE
+) {
   chk_whole_number(min_length)
   chk_range(min_length, c(14, 274))
 

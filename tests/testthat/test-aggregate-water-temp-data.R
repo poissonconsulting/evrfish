@@ -1,8 +1,8 @@
 test_that("aggregate_water_temp_data 1 day", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
       "2021-05-07 16:00:00"
     )),
     water_temperature = c(5, 5, 7)
@@ -13,9 +13,9 @@ test_that("aggregate_water_temp_data 1 day", {
 
 test_that("aggregate_water_temp_data 1 day NA", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
       "2021-05-07 16:00:00"
     )),
     water_temperature = c(5, NA, 7)
@@ -26,9 +26,9 @@ test_that("aggregate_water_temp_data 1 day NA", {
 
 test_that("aggregate_water_temp_data 1 day NA low coverage", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
       "2021-05-07 16:00:00"
     )),
     water_temperature = c(5, NA, 7)
@@ -39,12 +39,14 @@ test_that("aggregate_water_temp_data 1 day NA low coverage", {
 
 test_that("aggregate_water_temp_data 2 day", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
-      "2021-05-07 16:00:00", "2021-05-09 00:00:00", 
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
+      "2021-05-07 16:00:00",
+      "2021-05-09 00:00:00",
       "2021-05-09 08:00:00",
-      "2021-05-09 16:00:00"   )),
+      "2021-05-09 16:00:00"
+    )),
     water_temperature = c(5, 5, 7, 4, 10, 20)
   )
   agg <- aggregate_water_temp_data(data)
@@ -53,12 +55,14 @@ test_that("aggregate_water_temp_data 2 day", {
 
 test_that("aggregate_water_temp_data 2 day super tight", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
-      "2021-05-07 16:00:00", "2021-05-09 00:00:00", 
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
+      "2021-05-07 16:00:00",
+      "2021-05-09 00:00:00",
       "2021-05-09 08:00:00",
-      "2021-05-09 09:00:00"   )),
+      "2021-05-09 09:00:00"
+    )),
     water_temperature = c(5, 5, 7, 4, 10, 20)
   )
   agg <- aggregate_water_temp_data(data)
@@ -67,9 +71,9 @@ test_that("aggregate_water_temp_data 2 day super tight", {
 
 test_that("aggregate_water_temp_data preserves name", {
   data <- data.frame(
-    date_time =
-    as.POSIXct(c(
-      "2021-05-07 00:00:00", "2021-05-07 08:00:00",
+    date_time = as.POSIXct(c(
+      "2021-05-07 00:00:00",
+      "2021-05-07 08:00:00",
       "2021-05-07 16:00:00"
     )),
     values = c(5, 5, 7)
@@ -80,9 +84,12 @@ test_that("aggregate_water_temp_data preserves name", {
 
 test_that("aggregate_water_temp_data 15 min default TZ", {
   data <- data.frame(
-    date_time =
-      seq(as.POSIXct("2021-05-07 00:00:00", tz = "UTC"), as.POSIXct("2021-05-09 23:45:00", tz = "UTC"), length.out = 288),
-    values = seq(-9,10, length.out = 288)
+    date_time = seq(
+      as.POSIXct("2021-05-07 00:00:00", tz = "UTC"),
+      as.POSIXct("2021-05-09 23:45:00", tz = "UTC"),
+      length.out = 288
+    ),
+    values = seq(-9, 10, length.out = 288)
   )
   agg <- aggregate_water_temp_data(data, value = "values")
   expect_snapshot_data(agg, "3day15min")
@@ -90,9 +97,12 @@ test_that("aggregate_water_temp_data 15 min default TZ", {
 
 test_that("aggregate_water_temp_data 15 min UTC", {
   data <- data.frame(
-    date_time =
-      seq(as.POSIXct("2021-05-07 00:00:00", tz = "UTC"), as.POSIXct("2021-05-09 23:45:00", tz = "UTC"), length.out = 288),
-    values = seq(-9,10, length.out = 288)
+    date_time = seq(
+      as.POSIXct("2021-05-07 00:00:00", tz = "UTC"),
+      as.POSIXct("2021-05-09 23:45:00", tz = "UTC"),
+      length.out = 288
+    ),
+    values = seq(-9, 10, length.out = 288)
   )
   agg <- aggregate_water_temp_data(data, value = "values")
   expect_snapshot_data(agg, "3day15minutc")

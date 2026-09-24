@@ -36,7 +36,7 @@ min_diff_days <- function(x) {
 
 mean_daily <- function(x, n) {
   x <- x[!is.na(x)]
-  if(length(x) < n) {
+  if (length(x) < n) {
     return(NA_real_)
   }
   mean(x)
