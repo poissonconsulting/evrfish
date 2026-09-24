@@ -28,3 +28,13 @@
         <int> <dbl>
       1  2019  1300
 
+# gdd returns NA for year when second season truncated
+
+    Code
+      gdd
+    Output
+      # A tibble: 1 x 2
+         year   gdd
+        <int> <dbl>
+      1  2019    NA
+
