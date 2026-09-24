@@ -1,7 +1,7 @@
 #' Calculate Growing Season Degree Days (GSDD)
 #'
 #' A wrapper on [gsdd::gsdd()] to get the Growing Season Degree Days for
-#' the longest growing season.
+#' all the growing seasons in a year.
 #'
 #' @inheritParams params
 #' @inheritParams gsdd::gsdd
@@ -20,7 +20,14 @@ gsdd <- function(
 
   gsdd::gsdd(
     x,
+    start_date = as.Date("1972-03-01"),
+    end_date = as.Date("1972-11-30"),
+    ignore_truncation = FALSE,
     min_length = min_length,
+    start_temp = 5,
+    end_temp = 4,
+    window_width = 7,
+    pick = "all",
     msgs = msgs
   )
 }
