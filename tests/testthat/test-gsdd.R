@@ -13,3 +13,13 @@ test_that("gsdd works t2", {
     gsdd
   })
 })
+
+test_that("gsdd returns NA for year when second season truncated", {
+  data <- gsdd::temperature_data
+  data$temperature <- data$temperature2
+  data$temperature[data$date >= as.Date("2019-08-28")] <- NA_real_
+  gsdd <- gsdd(data, msgs = FALSE)
+  expect_snapshot({
+    gsdd
+  })
+})
