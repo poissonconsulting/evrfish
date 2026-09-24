@@ -28,7 +28,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/poissonconsulting/evrfish/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/poissonconsulting/evrfish/blob/v0.8.0/DESCRIPTION)
 
 Thorley J, Pearson A, Lyons S (2026). *evrfish: R Tools for EVR Fish
 Projects*. R package version 0.8.0,
