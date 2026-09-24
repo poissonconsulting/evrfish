@@ -3,6 +3,8 @@
 # evrfish 0.8.0
 
 - Changed `gdd()` from the `"longest"` growing season to `"all"` growing seasons, consistent with `gsdd()`.
+- `gdd()` and `gsdd()` now explicitly pass the growing season arguments (`start_date`, `end_date`, `ignore_truncation`, `start_temp`, `end_temp` and `window_width`) so that changes to the defaults in the `gsdd` package do not alter the results.
+- Standardized CI via the poissonconsulting reusable workflows and added fledge version-bump automation.
 - Formatted code with air (#42).
 
 
