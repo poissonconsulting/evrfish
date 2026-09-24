@@ -2,8 +2,7 @@
 
 A wrapper on
 [`gsdd::gdd()`](https://poissonconsulting.github.io/gsdd/reference/gdd.html)
-to get the Growing Degree Days up to a date for the longest growing
-season.
+to get the Growing Degree Days up to a date for all growing seasons.
 
 ## Usage
 

@@ -22,6 +22,9 @@ Useful links:
 
 Authors:
 
+- Joe Thorley <joe@poissonconsulting.ca>
+  ([ORCID](https://orcid.org/0000-0002-7683-4592))
+
 - Ayla Pearson <ayla@poissonconsulting.ca>
   ([ORCID](https://orcid.org/0000-0001-7388-1222))
 
@@ -35,6 +38,7 @@ Other contributors:
 
 - Andrew Harwood \[contributor\]
 
-- Sebastian Dalgarno \[contributor\]
+- Sebastian Dalgarno ([ORCID](https://orcid.org/0000-0002-3658-4517))
+  \[contributor\]
 
 - Elk Valley Resources \[funder, copyright holder\]

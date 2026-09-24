@@ -8,8 +8,3 @@ freshwater fishes in British Columbia.
 ``` r
 freshwaterfish
 ```
-
-## Format
-
-An object of class `tbl_df` (inherits from `tbl`, `data.frame`) with 161
-rows and 17 columns.

@@ -2,7 +2,8 @@
 
 A wrapper on
 [`gsdd::gsdd()`](https://poissonconsulting.github.io/gsdd/reference/gsdd.html)
-to get the Growing Season Degree Days for the longest growing season.
+to get the Growing Season Degree Days for all the growing seasons in a
+year.
 
 ## Usage
 

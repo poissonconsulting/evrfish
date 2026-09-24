@@ -37,7 +37,7 @@ A non-negative real number of the GSDD.
 
 ## See also
 
-[`gsdd::gsdd_vctr()`](https://poissonconsulting.github.io/gsdd/reference/gsdd_vctr.html)
+[`gsdd_vctr()`](https://poissonconsulting.github.io/gsdd/reference/gsdd_vctr.html)
 
 ## Examples
 
