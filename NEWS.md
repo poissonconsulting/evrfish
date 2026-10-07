@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# evrfish 0.8.0.9000
+
+- Switching to development version.
+
+
 # evrfish 0.8.0
 
 - Changed `gdd()` from the `"longest"` growing season to `"all"` growing seasons, consistent with `gsdd()`.
