@@ -1,5 +1,9 @@
 # Changelog
 
+## evrfish 0.8.0.9000
+
+- Switching to development version.
+
 ## evrfish 0.8.0
 
 - Changed
