@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# evrfish 0.8.0.9001
+
+- Same as previous version.
+
+
 # evrfish 0.8.0.9000
 
 - Switching to development version.
